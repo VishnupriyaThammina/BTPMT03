@@ -1,0 +1,276 @@
+
+
+
+No. 0 experiment ~~~
+<torch.utils.data.dataloader.DataLoader object at 0x7f4f3c262650>
+PM25_GNN(
+  (fc_in): Linear(in_features=11, out_features=64, bias=True)
+  (graph_gnn): GraphGNN(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=25, out_features=48, bias=True)
+      (1): Sigmoid()
+      (2): Linear(in_features=48, out_features=48, bias=True)
+      (3): Sigmoid()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=48, out_features=2, bias=True)
+      (1): Sigmoid()
+    )
+  )
+  (edge_conv): EdgeConv()
+  (lstm_cell): LSTMCell(
+    (x2h): Linear(in_features=15, out_features=256, bias=True)
+    (h2h): Linear(in_features=64, out_features=256, bias=True)
+  )
+  (fc_out): Linear(in_features=64, out_features=1, bias=True)
+)
++-----------------------------+------------+
+|           Modules           | Parameters |
++-----------------------------+------------+
+|         fc_in.weight        |    704     |
+|          fc_in.bias         |     64     |
+|         graph_gnn.w         |     1      |
+|         graph_gnn.b         |     1      |
+| graph_gnn.edge_mlp.0.weight |    1200    |
+|  graph_gnn.edge_mlp.0.bias  |     48     |
+| graph_gnn.edge_mlp.2.weight |    2304    |
+|  graph_gnn.edge_mlp.2.bias  |     48     |
+| graph_gnn.node_mlp.0.weight |     96     |
+|  graph_gnn.node_mlp.0.bias  |     2      |
+|    edge_conv.mlp.0.weight   |     44     |
+|     edge_conv.mlp.0.bias    |     2      |
+|    edge_conv.mlp.2.weight   |     4      |
+|     edge_conv.mlp.2.bias    |     2      |
+|     lstm_cell.x2h.weight    |    3840    |
+|      lstm_cell.x2h.bias     |    256     |
+|     lstm_cell.h2h.weight    |   16384    |
+|      lstm_cell.h2h.bias     |    256     |
+|        fc_out.weight        |     64     |
+|         fc_out.bias         |     1      |
++-----------------------------+------------+
+Total Trainable Params: 25321
+
+Train epoch 0:
+
+812it [01:48,  7.50it/s]
+
+train_loss: 0.5984
+
+09/09 05:58:49 AM | Epoch: 0/0.598---Train,0.529----Test,RMSE29.547,NRMSE0.0327,MAE25.372,R20.585,CSI0.651,POD0.796,FAR0.219
+
+09/09 05:58:49 AM | Epoch: 0/0.598---Train,0.529----Test,RMSE29.547,NRMSE0.0327,MAE25.372,R20.585,CSI0.651,POD0.796,FAR0.219
+
+INFO:gal:Epoch: 0/0.598---Train,0.529----Test,RMSE29.547,NRMSE0.0327,MAE25.372,R20.585,CSI0.651,POD0.796,FAR0.219
+
+pred (1725, 8, 266)
+lab (1725, 8, 266)
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909055626/00/0/model.pth
+Train loss: 0.5984, Test loss: 0.5288, RMSE: 29.55,NRMSE: 0.0327, MAE: 25.37,R2: 0.5846, CSI: 0.6509, POD: 0.7960, FAR: 0.2188
+
+Train epoch 1:
+
+812it [01:48,  7.49it/s]
+
+train_loss: 0.5090
+
+09/09 06:01:12 AM | Epoch: 1/0.509---Train,0.506----Test,RMSE29.308,NRMSE0.0324,MAE25.115,R20.603,CSI0.661,POD0.797,FAR0.206
+
+09/09 06:01:12 AM | Epoch: 1/0.509---Train,0.506----Test,RMSE29.308,NRMSE0.0324,MAE25.115,R20.603,CSI0.661,POD0.797,FAR0.206
+
+INFO:gal:Epoch: 1/0.509---Train,0.506----Test,RMSE29.308,NRMSE0.0324,MAE25.115,R20.603,CSI0.661,POD0.797,FAR0.206
+
+pred (1725, 8, 266)
+lab (1725, 8, 266)
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909055626/00/1/model.pth
+Train loss: 0.5090, Test loss: 0.5056, RMSE: 29.31,NRMSE: 0.0324, MAE: 25.11,R2: 0.6029, CSI: 0.6608, POD: 0.7974, FAR: 0.2059
+
+Train epoch 2:
+
+812it [01:48,  7.48it/s]
+
+train_loss: 0.4888
+
+09/09 06:03:36 AM | Epoch: 2/0.489---Train,0.615----Test,RMSE35.279,NRMSE0.0390,MAE31.151,R20.517,CSI0.627,POD0.906,FAR0.329
+
+09/09 06:03:36 AM | Epoch: 2/0.489---Train,0.615----Test,RMSE35.279,NRMSE0.0390,MAE31.151,R20.517,CSI0.627,POD0.906,FAR0.329
+
+INFO:gal:Epoch: 2/0.489---Train,0.615----Test,RMSE35.279,NRMSE0.0390,MAE31.151,R20.517,CSI0.627,POD0.906,FAR0.329
+
+pred (1725, 8, 266)
+lab (1725, 8, 266)
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909055626/00/2/model.pth
+Train loss: 0.4888, Test loss: 0.6147, RMSE: 35.28,NRMSE: 0.0390, MAE: 31.15,R2: 0.5172, CSI: 0.6273, POD: 0.9061, FAR: 0.3291
+
+Train epoch 3:
+
+812it [01:48,  7.50it/s]
+
+train_loss: 0.4836
+
+09/09 06:05:59 AM | Epoch: 3/0.484---Train,0.483----Test,RMSE29.609,NRMSE0.0327,MAE25.617,R20.621,CSI0.662,POD0.869,FAR0.265
+
+09/09 06:05:59 AM | Epoch: 3/0.484---Train,0.483----Test,RMSE29.609,NRMSE0.0327,MAE25.617,R20.621,CSI0.662,POD0.869,FAR0.265
+
+INFO:gal:Epoch: 3/0.484---Train,0.483----Test,RMSE29.609,NRMSE0.0327,MAE25.617,R20.621,CSI0.662,POD0.869,FAR0.265
+
+pred (1725, 8, 266)
+lab (1725, 8, 266)
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909055626/00/3/model.pth
+Train loss: 0.4836, Test loss: 0.4827, RMSE: 29.61,NRMSE: 0.0327, MAE: 25.62,R2: 0.6209, CSI: 0.6618, POD: 0.8691, FAR: 0.2650
+
+Train epoch 4:
+
+812it [01:48,  7.46it/s]
+
+train_loss: 0.4769
+
+09/09 06:08:22 AM | Epoch: 4/0.477---Train,0.515----Test,RMSE28.872,NRMSE0.0319,MAE24.728,R20.595,CSI0.670,POD0.814,FAR0.209
+
+09/09 06:08:22 AM | Epoch: 4/0.477---Train,0.515----Test,RMSE28.872,NRMSE0.0319,MAE24.728,R20.595,CSI0.670,POD0.814,FAR0.209
+
+INFO:gal:Epoch: 4/0.477---Train,0.515----Test,RMSE28.872,NRMSE0.0319,MAE24.728,R20.595,CSI0.670,POD0.814,FAR0.209
+
+pred (1725, 8, 266)
+lab (1725, 8, 266)
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909055626/00/4/model.pth
+Train loss: 0.4769, Test loss: 0.5152, RMSE: 28.87,NRMSE: 0.0319, MAE: 24.73,R2: 0.5954, CSI: 0.6701, POD: 0.8144, FAR: 0.2091
+
+Train epoch 5:
+
+812it [01:49,  7.44it/s]
+
+train_loss: 0.4734
+
+09/09 06:10:46 AM | Epoch: 5/0.473---Train,0.483----Test,RMSE29.031,NRMSE0.0321,MAE24.992,R20.621,CSI0.669,POD0.850,FAR0.241
+
+09/09 06:10:46 AM | Epoch: 5/0.473---Train,0.483----Test,RMSE29.031,NRMSE0.0321,MAE24.992,R20.621,CSI0.669,POD0.850,FAR0.241
+
+INFO:gal:Epoch: 5/0.473---Train,0.483----Test,RMSE29.031,NRMSE0.0321,MAE24.992,R20.621,CSI0.669,POD0.850,FAR0.241
+
+pred (1725, 8, 266)
+lab (1725, 8, 266)
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909055626/00/5/model.pth
+Train loss: 0.4734, Test loss: 0.4829, RMSE: 29.03,NRMSE: 0.0321, MAE: 24.99,R2: 0.6207, CSI: 0.6694, POD: 0.8497, FAR: 0.2407
+
+Train epoch 6:
+
+812it [01:49,  7.43it/s]
+
+train_loss: 0.4698
+
+09/09 06:13:10 AM | Epoch: 6/0.470---Train,0.484----Test,RMSE28.355,NRMSE0.0314,MAE24.225,R20.620,CSI0.666,POD0.796,FAR0.196
+
+09/09 06:13:10 AM | Epoch: 6/0.470---Train,0.484----Test,RMSE28.355,NRMSE0.0314,MAE24.225,R20.620,CSI0.666,POD0.796,FAR0.196
+
+INFO:gal:Epoch: 6/0.470---Train,0.484----Test,RMSE28.355,NRMSE0.0314,MAE24.225,R20.620,CSI0.666,POD0.796,FAR0.196
+
+pred (1725, 8, 266)
+lab (1725, 8, 266)
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909055626/00/6/model.pth
+Train loss: 0.4698, Test loss: 0.4839, RMSE: 28.36,NRMSE: 0.0314, MAE: 24.22,R2: 0.6199, CSI: 0.6662, POD: 0.7958, FAR: 0.1964
+
+Train epoch 7:
+
+812it [01:50,  7.38it/s]
+
+train_loss: 0.4703
+
+09/09 06:15:35 AM | Epoch: 7/0.470---Train,0.502----Test,RMSE33.334,NRMSE0.0369,MAE29.405,R20.606,CSI0.628,POD0.919,FAR0.335
+
+09/09 06:15:35 AM | Epoch: 7/0.470---Train,0.502----Test,RMSE33.334,NRMSE0.0369,MAE29.405,R20.606,CSI0.628,POD0.919,FAR0.335
+
+INFO:gal:Epoch: 7/0.470---Train,0.502----Test,RMSE33.334,NRMSE0.0369,MAE29.405,R20.606,CSI0.628,POD0.919,FAR0.335
+
+pred (1725, 8, 266)
+lab (1725, 8, 266)
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909055626/00/7/model.pth
+Train loss: 0.4703, Test loss: 0.5021, RMSE: 33.33,NRMSE: 0.0369, MAE: 29.41,R2: 0.6056, CSI: 0.6280, POD: 0.9189, FAR: 0.3351
+
+Train epoch 8:
+
+812it [01:49,  7.38it/s]
+
+train_loss: 0.4693
+
+09/09 06:17:59 AM | Epoch: 8/0.469---Train,0.486----Test,RMSE28.983,NRMSE0.0321,MAE24.924,R20.618,CSI0.673,POD0.840,FAR0.228
+
+09/09 06:17:59 AM | Epoch: 8/0.469---Train,0.486----Test,RMSE28.983,NRMSE0.0321,MAE24.924,R20.618,CSI0.673,POD0.840,FAR0.228
+
+INFO:gal:Epoch: 8/0.469---Train,0.486----Test,RMSE28.983,NRMSE0.0321,MAE24.924,R20.618,CSI0.673,POD0.840,FAR0.228
+
+pred (1725, 8, 266)
+lab (1725, 8, 266)
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909055626/00/8/model.pth
+Train loss: 0.4693, Test loss: 0.4862, RMSE: 28.98,NRMSE: 0.0321, MAE: 24.92,R2: 0.6181, CSI: 0.6728, POD: 0.8398, FAR: 0.2281
+
+Train epoch 9:
+
+812it [01:50,  7.36it/s]
+
+train_loss: nan
+pred (1725, 8, 266)
+lab (1725, 8, 266)
+
+<ipython-input-2-a13827935d88>:81: RuntimeWarning: invalid value encountered in long_scalars
+  csi = hit / (hit + falsealarm + miss)
+<ipython-input-2-a13827935d88>:82: RuntimeWarning: invalid value encountered in long_scalars
+  pod = hit / (hit + miss)
+<ipython-input-2-a13827935d88>:83: RuntimeWarning: invalid value encountered in long_scalars
+  far = falsealarm / (hit + falsealarm)
+
+---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+<ipython-input-2-a13827935d88> in <cell line: 398>()
+    397 
+    398 if __name__ == '__main__':
+--> 399     main()
+
+5 frames
+
+<ipython-input-2-a13827935d88> in main()
+    302             # print(label_epoch)
+    303             train_loss_=  train_loss
+--> 304             rmse, nrmse,mae,r2,csi, pod, far = get_metric(predict_epoch, label_epoch)
+    305 
+    306             # print("rmse",rmse)
+
+<ipython-input-2-a13827935d88> in get_metric(predict_epoch, label_epoch)
+     98     # print("dsff",predict_epoch.shape)
+     99     # mape = np.mean(np.abs((predict_epoch - label_epoch)/label_epoch), axis=1)
+--> 100     r2=r2_score(label_epoch,predict_epoch)
+    101     return rmse, nrmse, mae,r2, csi, pod, far
+    102 
+
+/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_regression.py in r2_score(y_true, y_pred, sample_weight, multioutput, force_finite)
+    909     -inf
+    910     """
+--> 911     y_type, y_true, y_pred, multioutput = _check_reg_targets(
+    912         y_true, y_pred, multioutput
+    913     )
+
+/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_regression.py in _check_reg_targets(y_true, y_pred, multioutput, dtype)
+    100     check_consistent_length(y_true, y_pred)
+    101     y_true = check_array(y_true, ensure_2d=False, dtype=dtype)
+--> 102     y_pred = check_array(y_pred, ensure_2d=False, dtype=dtype)
+    103 
+    104     if y_true.ndim == 1:
+
+/usr/local/lib/python3.10/dist-packages/sklearn/utils/validation.py in check_array(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)
+    919 
+    920         if force_all_finite:
+--> 921             _assert_all_finite(
+    922                 array,
+    923                 input_name=input_name,
+
+/usr/local/lib/python3.10/dist-packages/sklearn/utils/validation.py in _assert_all_finite(X, allow_nan, msg_dtype, estimator_name, input_name)
+    159                 "#estimators-that-handle-nan-values"
+    160             )
+--> 161         raise ValueError(msg_err)
+    162 
+    163 
+
+ValueError: Input contains NaN.
+
+

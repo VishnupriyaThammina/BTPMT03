@@ -1,0 +1,205 @@
+
+
+
+No. 0 experiment ~~~
+PM25_GNN(
+  (fc_in): Linear(in_features=11, out_features=64, bias=True)
+  (graph_gnn): GraphGNN(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=25, out_features=48, bias=True)
+      (1): Sigmoid()
+      (2): Linear(in_features=48, out_features=48, bias=True)
+      (3): Sigmoid()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=48, out_features=2, bias=True)
+      (1): Sigmoid()
+    )
+  )
+  (edge_conv): EdgeConv()
+  (lstm_cell): LSTMCell(
+    (x2h): Linear(in_features=15, out_features=256, bias=True)
+    (h2h): Linear(in_features=64, out_features=256, bias=True)
+  )
+  (fc_out): Linear(in_features=64, out_features=1, bias=True)
+  (mlp1): Linear(in_features=6, out_features=2, bias=True)
+)
++-----------------------------+------------+
+|           Modules           | Parameters |
++-----------------------------+------------+
+|         fc_in.weight        |    704     |
+|          fc_in.bias         |     64     |
+|         graph_gnn.w         |     1      |
+|         graph_gnn.b         |     1      |
+| graph_gnn.edge_mlp.0.weight |    1200    |
+|  graph_gnn.edge_mlp.0.bias  |     48     |
+| graph_gnn.edge_mlp.2.weight |    2304    |
+|  graph_gnn.edge_mlp.2.bias  |     48     |
+| graph_gnn.node_mlp.0.weight |     96     |
+|  graph_gnn.node_mlp.0.bias  |     2      |
+|    edge_conv.mlp.0.weight   |     44     |
+|     edge_conv.mlp.0.bias    |     2      |
+|    edge_conv.mlp.2.weight   |     4      |
+|     edge_conv.mlp.2.bias    |     2      |
+|     lstm_cell.x2h.weight    |    3840    |
+|      lstm_cell.x2h.bias     |    256     |
+|     lstm_cell.h2h.weight    |   16384    |
+|      lstm_cell.h2h.bias     |    256     |
+|        fc_out.weight        |     64     |
+|         fc_out.bias         |     1      |
+|         mlp1.weight         |     12     |
+|          mlp1.bias          |     2      |
++-----------------------------+------------+
+Total Trainable Params: 25335
+
+Train epoch 0:
+
+812it [02:04,  6.50it/s]
+
+train_loss: 0.5982
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909060807/00/0/model.pth
+Train loss: 0.5982, Test loss: 0.6924, RMSE: 33.38,NRMSE: 0.0369, MAE: 28.79,R2: 0.4562, CSI: 0.5266, POD: 0.5863, FAR: 0.1621
+
+09/09 06:10:57 AM | Epoch: 0/0.598---Train,0.692----Test,RMSE33.378,NRMSE0.0369,MAE28.793,R20.456,CSI0.527,POD0.586,FAR0.162
+
+INFO:gal:Epoch: 0/0.598---Train,0.692----Test,RMSE33.378,NRMSE0.0369,MAE28.793,R20.456,CSI0.527,POD0.586,FAR0.162
+
+
+Train epoch 1:
+
+812it [02:02,  6.65it/s]
+
+train_loss: 0.5234
+
+09/09 06:13:36 AM | Epoch: 1/0.523---Train,0.533----Test,RMSE30.166,NRMSE0.0334,MAE25.969,R20.582,CSI0.655,POD0.837,FAR0.250
+
+INFO:gal:Epoch: 1/0.523---Train,0.533----Test,RMSE30.166,NRMSE0.0334,MAE25.969,R20.582,CSI0.655,POD0.837,FAR0.250
+
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909060807/00/1/model.pth
+Train loss: 0.5234, Test loss: 0.5325, RMSE: 30.17,NRMSE: 0.0334, MAE: 25.97,R2: 0.5817, CSI: 0.6546, POD: 0.8371, FAR: 0.2498
+
+Train epoch 2:
+
+812it [02:02,  6.64it/s]
+
+train_loss: 0.5059
+
+09/09 06:16:14 AM | Epoch: 2/0.506---Train,0.566----Test,RMSE29.634,NRMSE0.0328,MAE25.239,R20.555,CSI0.623,POD0.710,FAR0.164
+
+INFO:gal:Epoch: 2/0.506---Train,0.566----Test,RMSE29.634,NRMSE0.0328,MAE25.239,R20.555,CSI0.623,POD0.710,FAR0.164
+
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909060807/00/2/model.pth
+Train loss: 0.5059, Test loss: 0.5660, RMSE: 29.63,NRMSE: 0.0328, MAE: 25.24,R2: 0.5554, CSI: 0.6232, POD: 0.7099, FAR: 0.1637
+
+Train epoch 3:
+
+812it [02:02,  6.63it/s]
+
+train_loss: 0.4923
+
+09/09 06:18:53 AM | Epoch: 3/0.492---Train,0.512----Test,RMSE28.883,NRMSE0.0319,MAE24.646,R20.598,CSI0.645,POD0.755,FAR0.184
+
+INFO:gal:Epoch: 3/0.492---Train,0.512----Test,RMSE28.883,NRMSE0.0319,MAE24.646,R20.598,CSI0.645,POD0.755,FAR0.184
+
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909060807/00/3/model.pth
+Train loss: 0.4923, Test loss: 0.5119, RMSE: 28.88,NRMSE: 0.0319, MAE: 24.65,R2: 0.5979, CSI: 0.6452, POD: 0.7549, FAR: 0.1839
+
+Train epoch 4:
+
+812it [02:02,  6.64it/s]
+
+train_loss: 0.4868
+
+09/09 06:21:32 AM | Epoch: 4/0.487---Train,0.551----Test,RMSE34.630,NRMSE0.0383,MAE30.622,R20.568,CSI0.616,POD0.901,FAR0.339
+
+INFO:gal:Epoch: 4/0.487---Train,0.551----Test,RMSE34.630,NRMSE0.0383,MAE30.622,R20.568,CSI0.616,POD0.901,FAR0.339
+
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909060807/00/4/model.pth
+Train loss: 0.4868, Test loss: 0.5505, RMSE: 34.63,NRMSE: 0.0383, MAE: 30.62,R2: 0.5676, CSI: 0.6160, POD: 0.9008, FAR: 0.3392
+
+Train epoch 5:
+
+812it [02:02,  6.62it/s]
+
+train_loss: 0.4783
+
+09/09 06:24:11 AM | Epoch: 5/0.478---Train,0.504----Test,RMSE28.885,NRMSE0.0319,MAE24.605,R20.604,CSI0.648,POD0.752,FAR0.176
+
+INFO:gal:Epoch: 5/0.478---Train,0.504----Test,RMSE28.885,NRMSE0.0319,MAE24.605,R20.604,CSI0.648,POD0.752,FAR0.176
+
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909060807/00/5/model.pth
+Train loss: 0.4783, Test loss: 0.5038, RMSE: 28.88,NRMSE: 0.0319, MAE: 24.61,R2: 0.6043, CSI: 0.6480, POD: 0.7521, FAR: 0.1760
+
+Train epoch 6:
+
+812it [02:02,  6.63it/s]
+
+train_loss: 0.4778
+
+09/09 06:26:49 AM | Epoch: 6/0.478---Train,0.516----Test,RMSE30.548,NRMSE0.0338,MAE26.165,R20.595,CSI0.626,POD0.707,FAR0.154
+
+INFO:gal:Epoch: 6/0.478---Train,0.516----Test,RMSE30.548,NRMSE0.0338,MAE26.165,R20.595,CSI0.626,POD0.707,FAR0.154
+
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909060807/00/6/model.pth
+Train loss: 0.4778, Test loss: 0.5159, RMSE: 30.55,NRMSE: 0.0338, MAE: 26.16,R2: 0.5950, CSI: 0.6258, POD: 0.7066, FAR: 0.1545
+
+Train epoch 7:
+
+812it [02:01,  6.67it/s]
+
+train_loss: 0.4717
+
+09/09 06:29:28 AM | Epoch: 7/0.472---Train,0.489----Test,RMSE29.492,NRMSE0.0326,MAE25.487,R20.616,CSI0.660,POD0.860,FAR0.260
+
+INFO:gal:Epoch: 7/0.472---Train,0.489----Test,RMSE29.492,NRMSE0.0326,MAE25.487,R20.616,CSI0.660,POD0.860,FAR0.260
+
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909060807/00/7/model.pth
+Train loss: 0.4717, Test loss: 0.4890, RMSE: 29.49,NRMSE: 0.0326, MAE: 25.49,R2: 0.6159, CSI: 0.6601, POD: 0.8601, FAR: 0.2605
+
+Train epoch 8:
+
+812it [02:01,  6.68it/s]
+
+train_loss: 0.4730
+
+09/09 06:32:05 AM | Epoch: 8/0.473---Train,0.481----Test,RMSE28.216,NRMSE0.0312,MAE24.051,R20.622,CSI0.663,POD0.808,FAR0.212
+
+INFO:gal:Epoch: 8/0.473---Train,0.481----Test,RMSE28.216,NRMSE0.0312,MAE24.051,R20.622,CSI0.663,POD0.808,FAR0.212
+
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/16_8/PM2.5-GNN/20230909060807/00/8/model.pth
+Train loss: 0.4730, Test loss: 0.4808, RMSE: 28.22,NRMSE: 0.0312, MAE: 24.05,R2: 0.6224, CSI: 0.6631, POD: 0.8076, FAR: 0.2125
+
+Train epoch 9:
+
+812it [02:01,  6.66it/s]
+
+train_loss: nan
+
+<ipython-input-18-9f103c0e930b>:82: RuntimeWarning: invalid value encountered in long_scalars
+  csi = hit / (hit + falsealarm + miss)
+<ipython-input-18-9f103c0e930b>:83: RuntimeWarning: invalid value encountered in long_scalars
+  pod = hit / (hit + miss)
+<ipython-input-18-9f103c0e930b>:84: RuntimeWarning: invalid value encountered in long_scalars
+  far = falsealarm / (hit + falsealarm)
+
+---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+<ipython-input-18-9f103c0e930b> in <cell line: 399>()
+    398 
+    399 if __name__ == '__main__':
+--> 400     main()
+
+5 frames
+
+/usr/local/lib/python3.10/dist-packages/sklearn/utils/validation.py in _assert_all_finite(X, allow_nan, msg_dtype, estimator_name, input_name)
+    159                 "#estimators-that-handle-nan-values"
+    160             )
+--> 161         raise ValueError(msg_err)
+    162 
+    163 
+
+ValueError: Input contains NaN.
+
+
