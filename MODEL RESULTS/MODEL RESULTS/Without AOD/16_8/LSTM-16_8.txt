@@ -1,0 +1,453 @@
+
+No.1 experiment ~~~
+LSTM(
+  (m): Dropout(p=0.2, inplace=False)
+  (fc_in): Linear(in_features=8, out_features=64, bias=True)
+  (fc_out): Linear(in_features=64, out_features=1, bias=True)
+  (lstm_cell): LSTMCell(
+    (x2h): Linear(in_features=64, out_features=256, bias=True)
+    (h2h): Linear(in_features=64, out_features=256, bias=True)
+  )
+)
++----------------------+------------+
+|       Modules        | Parameters |
++----------------------+------------+
+|     fc_in.weight     |    512     |
+|      fc_in.bias      |     64     |
+|    fc_out.weight     |     64     |
+|     fc_out.bias      |     1      |
+| lstm_cell.x2h.weight |   16384    |
+|  lstm_cell.x2h.bias  |    256     |
+| lstm_cell.h2h.weight |   16384    |
+|  lstm_cell.h2h.bias  |    256     |
++----------------------+------------+
+Total Trainable Params: 33921
+
+Train epoch 0:
+253it [00:12, 20.73it/s]
+train_loss: 0.7869
+08/23 10:54:42 AM | Epoch: 0/0.787---Train,0.693----Test,RMSE40.040,NRMSE0.0443,MAE35.999,R20.456,CSI0.512,POD0.951,FAR0.474
+
+08/23 10:54:42 AM | Epoch: 0/0.787---Train,0.693----Test,RMSE40.040,NRMSE0.0443,MAE35.999,R20.456,CSI0.512,POD0.951,FAR0.474
+
+INFO:gal:Epoch: 0/0.787---Train,0.693----Test,RMSE40.040,NRMSE0.0443,MAE35.999,R20.456,CSI0.512,POD0.951,FAR0.474
+
+rmse 40.039913
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/0/model.pth
+Train loss: 0.7869, Test loss: 0.6927, RMSE: 40.04,NRMSE: 0.0443, MAE: 36.00,R2: 0.4561, CSI: 0.5124, POD: 0.9515, FAR: 0.4738
+
+Train epoch 1:
+253it [00:10, 23.57it/s]
+train_loss: 0.6070
+08/23 10:54:56 AM | Epoch: 1/0.607---Train,0.577----Test,RMSE33.404,NRMSE0.0369,MAE29.348,R20.547,CSI0.617,POD0.882,FAR0.327
+
+08/23 10:54:56 AM | Epoch: 1/0.607---Train,0.577----Test,RMSE33.404,NRMSE0.0369,MAE29.348,R20.547,CSI0.617,POD0.882,FAR0.327
+
+INFO:gal:Epoch: 1/0.607---Train,0.577----Test,RMSE33.404,NRMSE0.0369,MAE29.348,R20.547,CSI0.617,POD0.882,FAR0.327
+
+rmse 33.404217
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/1/model.pth
+Train loss: 0.6070, Test loss: 0.5771, RMSE: 33.40,NRMSE: 0.0369, MAE: 29.35,R2: 0.5468, CSI: 0.6170, POD: 0.8816, FAR: 0.3272
+
+Train epoch 2:
+253it [00:09, 25.85it/s]
+train_loss: 0.5620
+08/23 10:55:10 AM | Epoch: 2/0.562---Train,0.564----Test,RMSE29.325,NRMSE0.0324,MAE24.999,R20.557,CSI0.639,POD0.754,FAR0.192
+
+08/23 10:55:10 AM | Epoch: 2/0.562---Train,0.564----Test,RMSE29.325,NRMSE0.0324,MAE24.999,R20.557,CSI0.639,POD0.754,FAR0.192
+
+INFO:gal:Epoch: 2/0.562---Train,0.564----Test,RMSE29.325,NRMSE0.0324,MAE24.999,R20.557,CSI0.639,POD0.754,FAR0.192
+
+rmse 29.325216
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/2/model.pth
+Train loss: 0.5620, Test loss: 0.5641, RMSE: 29.33,NRMSE: 0.0324, MAE: 25.00,R2: 0.5571, CSI: 0.6392, POD: 0.7539, FAR: 0.1923
+
+Train epoch 3:
+253it [00:09, 25.75it/s]
+train_loss: 0.5524
+08/23 10:55:23 AM | Epoch: 3/0.552---Train,0.552----Test,RMSE29.108,NRMSE0.0322,MAE24.865,R20.567,CSI0.649,POD0.774,FAR0.200
+
+08/23 10:55:23 AM | Epoch: 3/0.552---Train,0.552----Test,RMSE29.108,NRMSE0.0322,MAE24.865,R20.567,CSI0.649,POD0.774,FAR0.200
+
+INFO:gal:Epoch: 3/0.552---Train,0.552----Test,RMSE29.108,NRMSE0.0322,MAE24.865,R20.567,CSI0.649,POD0.774,FAR0.200
+
+rmse 29.107794
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/3/model.pth
+Train loss: 0.5524, Test loss: 0.5521, RMSE: 29.11,NRMSE: 0.0322, MAE: 24.86,R2: 0.5665, CSI: 0.6486, POD: 0.7743, FAR: 0.2002
+
+Train epoch 4:
+253it [00:09, 26.04it/s]
+train_loss: 0.5370
+08/23 10:55:35 AM | Epoch: 4/0.537---Train,0.559----Test,RMSE29.995,NRMSE0.0332,MAE25.804,R20.561,CSI0.649,POD0.785,FAR0.210
+
+08/23 10:55:35 AM | Epoch: 4/0.537---Train,0.559----Test,RMSE29.995,NRMSE0.0332,MAE25.804,R20.561,CSI0.649,POD0.785,FAR0.210
+
+INFO:gal:Epoch: 4/0.537---Train,0.559----Test,RMSE29.995,NRMSE0.0332,MAE25.804,R20.561,CSI0.649,POD0.785,FAR0.210
+
+rmse 29.995031
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/4/model.pth
+Train loss: 0.5370, Test loss: 0.5590, RMSE: 30.00,NRMSE: 0.0332, MAE: 25.80,R2: 0.5610, CSI: 0.6489, POD: 0.7846, FAR: 0.2105
+
+Train epoch 5:
+253it [00:09, 25.30it/s]
+train_loss: 0.5323
+08/23 10:55:47 AM | Epoch: 5/0.532---Train,0.516----Test,RMSE28.826,NRMSE0.0319,MAE24.610,R20.595,CSI0.656,POD0.801,FAR0.216
+
+08/23 10:55:47 AM | Epoch: 5/0.532---Train,0.516----Test,RMSE28.826,NRMSE0.0319,MAE24.610,R20.595,CSI0.656,POD0.801,FAR0.216
+
+INFO:gal:Epoch: 5/0.532---Train,0.516----Test,RMSE28.826,NRMSE0.0319,MAE24.610,R20.595,CSI0.656,POD0.801,FAR0.216
+
+rmse 28.826365
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/5/model.pth
+Train loss: 0.5323, Test loss: 0.5162, RMSE: 28.83,NRMSE: 0.0319, MAE: 24.61,R2: 0.5946, CSI: 0.6562, POD: 0.8014, FAR: 0.2163
+
+Train epoch 6:
+253it [00:10, 23.71it/s]
+train_loss: 0.5371
+08/23 10:56:00 AM | Epoch: 6/0.537---Train,0.520----Test,RMSE29.863,NRMSE0.0330,MAE25.758,R20.592,CSI0.657,POD0.829,FAR0.239
+
+08/23 10:56:00 AM | Epoch: 6/0.537---Train,0.520----Test,RMSE29.863,NRMSE0.0330,MAE25.758,R20.592,CSI0.657,POD0.829,FAR0.239
+
+INFO:gal:Epoch: 6/0.537---Train,0.520----Test,RMSE29.863,NRMSE0.0330,MAE25.758,R20.592,CSI0.657,POD0.829,FAR0.239
+
+rmse 29.862745
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/6/model.pth
+Train loss: 0.5371, Test loss: 0.5202, RMSE: 29.86,NRMSE: 0.0330, MAE: 25.76,R2: 0.5916, CSI: 0.6574, POD: 0.8287, FAR: 0.2393
+
+Train epoch 7:
+253it [00:10, 24.26it/s]
+train_loss: 0.5240
+08/23 10:56:13 AM | Epoch: 7/0.524---Train,0.524----Test,RMSE29.656,NRMSE0.0328,MAE25.524,R20.589,CSI0.653,POD0.817,FAR0.235
+
+08/23 10:56:13 AM | Epoch: 7/0.524---Train,0.524----Test,RMSE29.656,NRMSE0.0328,MAE25.524,R20.589,CSI0.653,POD0.817,FAR0.235
+
+INFO:gal:Epoch: 7/0.524---Train,0.524----Test,RMSE29.656,NRMSE0.0328,MAE25.524,R20.589,CSI0.653,POD0.817,FAR0.235
+
+rmse 29.655943
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/7/model.pth
+Train loss: 0.5240, Test loss: 0.5239, RMSE: 29.66,NRMSE: 0.0328, MAE: 25.52,R2: 0.5886, CSI: 0.6530, POD: 0.8169, FAR: 0.2351
+
+Train epoch 8:
+253it [00:10, 23.47it/s]
+train_loss: 0.5204
+08/23 10:56:26 AM | Epoch: 8/0.520---Train,0.533----Test,RMSE28.791,NRMSE0.0318,MAE24.466,R20.581,CSI0.641,POD0.746,FAR0.181
+
+08/23 10:56:26 AM | Epoch: 8/0.520---Train,0.533----Test,RMSE28.791,NRMSE0.0318,MAE24.466,R20.581,CSI0.641,POD0.746,FAR0.181
+
+INFO:gal:Epoch: 8/0.520---Train,0.533----Test,RMSE28.791,NRMSE0.0318,MAE24.466,R20.581,CSI0.641,POD0.746,FAR0.181
+
+rmse 28.791254
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/8/model.pth
+Train loss: 0.5204, Test loss: 0.5331, RMSE: 28.79,NRMSE: 0.0318, MAE: 24.47,R2: 0.5814, CSI: 0.6406, POD: 0.7465, FAR: 0.1813
+
+Train epoch 9:
+253it [00:10, 24.29it/s]
+train_loss: 0.5145
+08/23 10:56:39 AM | Epoch: 9/0.514---Train,0.508----Test,RMSE29.551,NRMSE0.0327,MAE25.428,R20.601,CSI0.660,POD0.837,FAR0.243
+
+08/23 10:56:39 AM | Epoch: 9/0.514---Train,0.508----Test,RMSE29.551,NRMSE0.0327,MAE25.428,R20.601,CSI0.660,POD0.837,FAR0.243
+
+INFO:gal:Epoch: 9/0.514---Train,0.508----Test,RMSE29.551,NRMSE0.0327,MAE25.428,R20.601,CSI0.660,POD0.837,FAR0.243
+
+rmse 29.550964
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/9/model.pth
+Train loss: 0.5145, Test loss: 0.5085, RMSE: 29.55,NRMSE: 0.0327, MAE: 25.43,R2: 0.6007, CSI: 0.6597, POD: 0.8372, FAR: 0.2432
+
+Train epoch 10:
+253it [00:09, 27.12it/s]
+train_loss: 0.5134
+08/23 10:56:51 AM | Epoch: 10/0.513---Train,0.504----Test,RMSE28.452,NRMSE0.0315,MAE24.209,R20.604,CSI0.646,POD0.754,FAR0.182
+
+08/23 10:56:51 AM | Epoch: 10/0.513---Train,0.504----Test,RMSE28.452,NRMSE0.0315,MAE24.209,R20.604,CSI0.646,POD0.754,FAR0.182
+
+INFO:gal:Epoch: 10/0.513---Train,0.504----Test,RMSE28.452,NRMSE0.0315,MAE24.209,R20.604,CSI0.646,POD0.754,FAR0.182
+
+rmse 28.451838
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/10/model.pth
+Train loss: 0.5134, Test loss: 0.5043, RMSE: 28.45,NRMSE: 0.0315, MAE: 24.21,R2: 0.6040, CSI: 0.6458, POD: 0.7541, FAR: 0.1819
+
+Train epoch 11:
+253it [00:09, 26.18it/s]
+train_loss: 0.5091
+08/23 10:57:03 AM | Epoch: 11/0.509---Train,0.502----Test,RMSE28.629,NRMSE0.0317,MAE24.453,R20.606,CSI0.658,POD0.794,FAR0.207
+
+08/23 10:57:03 AM | Epoch: 11/0.509---Train,0.502----Test,RMSE28.629,NRMSE0.0317,MAE24.453,R20.606,CSI0.658,POD0.794,FAR0.207
+
+INFO:gal:Epoch: 11/0.509---Train,0.502----Test,RMSE28.629,NRMSE0.0317,MAE24.453,R20.606,CSI0.658,POD0.794,FAR0.207
+
+rmse 28.628904
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/11/model.pth
+Train loss: 0.5091, Test loss: 0.5017, RMSE: 28.63,NRMSE: 0.0317, MAE: 24.45,R2: 0.6060, CSI: 0.6579, POD: 0.7944, FAR: 0.2071
+
+Train epoch 12:
+253it [00:13, 18.96it/s]
+train_loss: 0.5066
+08/23 10:57:19 AM | Epoch: 12/0.507---Train,0.563----Test,RMSE29.975,NRMSE0.0332,MAE25.835,R20.558,CSI0.656,POD0.819,FAR0.232
+
+08/23 10:57:19 AM | Epoch: 12/0.507---Train,0.563----Test,RMSE29.975,NRMSE0.0332,MAE25.835,R20.558,CSI0.656,POD0.819,FAR0.232
+
+INFO:gal:Epoch: 12/0.507---Train,0.563----Test,RMSE29.975,NRMSE0.0332,MAE25.835,R20.558,CSI0.656,POD0.819,FAR0.232
+
+rmse 29.975279
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/12/model.pth
+Train loss: 0.5066, Test loss: 0.5633, RMSE: 29.98,NRMSE: 0.0332, MAE: 25.83,R2: 0.5577, CSI: 0.6562, POD: 0.8188, FAR: 0.2324
+
+Train epoch 13:
+253it [00:10, 23.91it/s]
+train_loss: 0.5051
+08/23 10:57:31 AM | Epoch: 13/0.505---Train,0.564----Test,RMSE36.608,NRMSE0.0405,MAE32.459,R20.557,CSI0.569,POD0.924,FAR0.403
+
+08/23 10:57:31 AM | Epoch: 13/0.505---Train,0.564----Test,RMSE36.608,NRMSE0.0405,MAE32.459,R20.557,CSI0.569,POD0.924,FAR0.403
+
+INFO:gal:Epoch: 13/0.505---Train,0.564----Test,RMSE36.608,NRMSE0.0405,MAE32.459,R20.557,CSI0.569,POD0.924,FAR0.403
+
+rmse 36.607655
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/13/model.pth
+Train loss: 0.5051, Test loss: 0.5639, RMSE: 36.61,NRMSE: 0.0405, MAE: 32.46,R2: 0.5572, CSI: 0.5690, POD: 0.9237, FAR: 0.4030
+
+Train epoch 14:
+253it [00:10, 23.99it/s]
+train_loss: 0.4998
+08/23 10:57:44 AM | Epoch: 14/0.500---Train,0.501----Test,RMSE29.674,NRMSE0.0328,MAE25.592,R20.607,CSI0.658,POD0.862,FAR0.264
+
+08/23 10:57:44 AM | Epoch: 14/0.500---Train,0.501----Test,RMSE29.674,NRMSE0.0328,MAE25.592,R20.607,CSI0.658,POD0.862,FAR0.264
+
+INFO:gal:Epoch: 14/0.500---Train,0.501----Test,RMSE29.674,NRMSE0.0328,MAE25.592,R20.607,CSI0.658,POD0.862,FAR0.264
+
+rmse 29.673946
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/14/model.pth
+Train loss: 0.4998, Test loss: 0.5011, RMSE: 29.67,NRMSE: 0.0328, MAE: 25.59,R2: 0.6065, CSI: 0.6585, POD: 0.8621, FAR: 0.2640
+
+Train epoch 15:
+253it [00:10, 23.88it/s]
+train_loss: 0.4974
+08/23 10:57:57 AM | Epoch: 15/0.497---Train,0.513----Test,RMSE29.492,NRMSE0.0326,MAE25.327,R20.597,CSI0.660,POD0.810,FAR0.219
+
+08/23 10:57:57 AM | Epoch: 15/0.497---Train,0.513----Test,RMSE29.492,NRMSE0.0326,MAE25.327,R20.597,CSI0.660,POD0.810,FAR0.219
+
+INFO:gal:Epoch: 15/0.497---Train,0.513----Test,RMSE29.492,NRMSE0.0326,MAE25.327,R20.597,CSI0.660,POD0.810,FAR0.219
+
+rmse 29.491737
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/15/model.pth
+Train loss: 0.4974, Test loss: 0.5130, RMSE: 29.49,NRMSE: 0.0326, MAE: 25.33,R2: 0.5971, CSI: 0.6600, POD: 0.8102, FAR: 0.2193
+
+Train epoch 16:
+253it [00:10, 24.21it/s]
+train_loss: 0.4978
+08/23 10:58:10 AM | Epoch: 16/0.498---Train,0.510----Test,RMSE29.478,NRMSE0.0326,MAE25.278,R20.599,CSI0.650,POD0.777,FAR0.201
+
+08/23 10:58:10 AM | Epoch: 16/0.498---Train,0.510----Test,RMSE29.478,NRMSE0.0326,MAE25.278,R20.599,CSI0.650,POD0.777,FAR0.201
+
+INFO:gal:Epoch: 16/0.498---Train,0.510----Test,RMSE29.478,NRMSE0.0326,MAE25.278,R20.599,CSI0.650,POD0.777,FAR0.201
+
+rmse 29.478384
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/16/model.pth
+Train loss: 0.4978, Test loss: 0.5104, RMSE: 29.48,NRMSE: 0.0326, MAE: 25.28,R2: 0.5992, CSI: 0.6498, POD: 0.7769, FAR: 0.2011
+
+Train epoch 17:
+253it [00:10, 24.70it/s]
+train_loss: 0.4918
+08/23 10:58:22 AM | Epoch: 17/0.492---Train,0.486----Test,RMSE28.385,NRMSE0.0314,MAE24.236,R20.618,CSI0.658,POD0.799,FAR0.211
+
+08/23 10:58:22 AM | Epoch: 17/0.492---Train,0.486----Test,RMSE28.385,NRMSE0.0314,MAE24.236,R20.618,CSI0.658,POD0.799,FAR0.211
+
+INFO:gal:Epoch: 17/0.492---Train,0.486----Test,RMSE28.385,NRMSE0.0314,MAE24.236,R20.618,CSI0.658,POD0.799,FAR0.211
+
+rmse 28.38523
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/17/model.pth
+Train loss: 0.4918, Test loss: 0.4858, RMSE: 28.39,NRMSE: 0.0314, MAE: 24.24,R2: 0.6185, CSI: 0.6584, POD: 0.7994, FAR: 0.2113
+
+Train epoch 18:
+253it [00:09, 26.87it/s]
+train_loss: 0.4880
+08/23 10:58:35 AM | Epoch: 18/0.488---Train,0.466----Test,RMSE28.123,NRMSE0.0311,MAE23.986,R20.634,CSI0.656,POD0.792,FAR0.207
+
+08/23 10:58:35 AM | Epoch: 18/0.488---Train,0.466----Test,RMSE28.123,NRMSE0.0311,MAE23.986,R20.634,CSI0.656,POD0.792,FAR0.207
+
+INFO:gal:Epoch: 18/0.488---Train,0.466----Test,RMSE28.123,NRMSE0.0311,MAE23.986,R20.634,CSI0.656,POD0.792,FAR0.207
+
+rmse 28.123325
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/18/model.pth
+Train loss: 0.4880, Test loss: 0.4664, RMSE: 28.12,NRMSE: 0.0311, MAE: 23.99,R2: 0.6338, CSI: 0.6563, POD: 0.7921, FAR: 0.2071
+
+Train epoch 19:
+253it [00:09, 26.36it/s]
+train_loss: 0.4919
+08/23 10:58:47 AM | Epoch: 19/0.492---Train,0.478----Test,RMSE29.948,NRMSE0.0331,MAE25.849,R20.625,CSI0.653,POD0.840,FAR0.254
+
+08/23 10:58:47 AM | Epoch: 19/0.492---Train,0.478----Test,RMSE29.948,NRMSE0.0331,MAE25.849,R20.625,CSI0.653,POD0.840,FAR0.254
+
+INFO:gal:Epoch: 19/0.492---Train,0.478----Test,RMSE29.948,NRMSE0.0331,MAE25.849,R20.625,CSI0.653,POD0.840,FAR0.254
+
+rmse 29.948193
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/19/model.pth
+Train loss: 0.4919, Test loss: 0.4779, RMSE: 29.95,NRMSE: 0.0331, MAE: 25.85,R2: 0.6247, CSI: 0.6533, POD: 0.8403, FAR: 0.2541
+
+Train epoch 20:
+253it [00:10, 24.01it/s]
+train_loss: 0.4918
+08/23 10:58:59 AM | Epoch: 20/0.492---Train,0.489----Test,RMSE28.938,NRMSE0.0320,MAE24.710,R20.616,CSI0.638,POD0.762,FAR0.203
+
+08/23 10:58:59 AM | Epoch: 20/0.492---Train,0.489----Test,RMSE28.938,NRMSE0.0320,MAE24.710,R20.616,CSI0.638,POD0.762,FAR0.203
+
+INFO:gal:Epoch: 20/0.492---Train,0.489----Test,RMSE28.938,NRMSE0.0320,MAE24.710,R20.616,CSI0.638,POD0.762,FAR0.203
+
+rmse 28.938005
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/20/model.pth
+Train loss: 0.4918, Test loss: 0.4887, RMSE: 28.94,NRMSE: 0.0320, MAE: 24.71,R2: 0.6162, CSI: 0.6381, POD: 0.7615, FAR: 0.2026
+
+Train epoch 21:
+253it [00:10, 23.58it/s]
+train_loss: 0.4886
+08/23 10:59:13 AM | Epoch: 21/0.489---Train,0.476----Test,RMSE28.241,NRMSE0.0312,MAE24.075,R20.626,CSI0.648,POD0.777,FAR0.204
+
+08/23 10:59:13 AM | Epoch: 21/0.489---Train,0.476----Test,RMSE28.241,NRMSE0.0312,MAE24.075,R20.626,CSI0.648,POD0.777,FAR0.204
+
+INFO:gal:Epoch: 21/0.489---Train,0.476----Test,RMSE28.241,NRMSE0.0312,MAE24.075,R20.626,CSI0.648,POD0.777,FAR0.204
+
+rmse 28.240808
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/21/model.pth
+Train loss: 0.4886, Test loss: 0.4762, RMSE: 28.24,NRMSE: 0.0312, MAE: 24.07,R2: 0.6260, CSI: 0.6479, POD: 0.7770, FAR: 0.2041
+
+Train epoch 22:
+253it [00:11, 22.32it/s]
+train_loss: 0.4816
+08/23 10:59:27 AM | Epoch: 22/0.482---Train,0.465----Test,RMSE28.193,NRMSE0.0312,MAE24.079,R20.635,CSI0.658,POD0.812,FAR0.223
+
+08/23 10:59:27 AM | Epoch: 22/0.482---Train,0.465----Test,RMSE28.193,NRMSE0.0312,MAE24.079,R20.635,CSI0.658,POD0.812,FAR0.223
+
+INFO:gal:Epoch: 22/0.482---Train,0.465----Test,RMSE28.193,NRMSE0.0312,MAE24.079,R20.635,CSI0.658,POD0.812,FAR0.223
+
+rmse 28.192873
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/22/model.pth
+Train loss: 0.4816, Test loss: 0.4653, RMSE: 28.19,NRMSE: 0.0312, MAE: 24.08,R2: 0.6346, CSI: 0.6584, POD: 0.8121, FAR: 0.2232
+
+Train epoch 23:
+253it [00:10, 23.84it/s]
+train_loss: 0.4868
+08/23 10:59:40 AM | Epoch: 23/0.487---Train,0.469----Test,RMSE27.763,NRMSE0.0307,MAE23.582,R20.631,CSI0.649,POD0.765,FAR0.191
+
+08/23 10:59:40 AM | Epoch: 23/0.487---Train,0.469----Test,RMSE27.763,NRMSE0.0307,MAE23.582,R20.631,CSI0.649,POD0.765,FAR0.191
+
+INFO:gal:Epoch: 23/0.487---Train,0.469----Test,RMSE27.763,NRMSE0.0307,MAE23.582,R20.631,CSI0.649,POD0.765,FAR0.191
+
+rmse 27.763342
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/23/model.pth
+Train loss: 0.4868, Test loss: 0.4694, RMSE: 27.76,NRMSE: 0.0307, MAE: 23.58,R2: 0.6314, CSI: 0.6485, POD: 0.7654, FAR: 0.1906
+
+Train epoch 24:
+253it [00:10, 24.52it/s]
+train_loss: 0.4872
+08/23 10:59:52 AM | Epoch: 24/0.487---Train,0.471----Test,RMSE28.342,NRMSE0.0313,MAE24.262,R20.630,CSI0.660,POD0.813,FAR0.222
+
+08/23 10:59:52 AM | Epoch: 24/0.487---Train,0.471----Test,RMSE28.342,NRMSE0.0313,MAE24.262,R20.630,CSI0.660,POD0.813,FAR0.222
+
+INFO:gal:Epoch: 24/0.487---Train,0.471----Test,RMSE28.342,NRMSE0.0313,MAE24.262,R20.630,CSI0.660,POD0.813,FAR0.222
+
+rmse 28.341679
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/24/model.pth
+Train loss: 0.4872, Test loss: 0.4707, RMSE: 28.34,NRMSE: 0.0313, MAE: 24.26,R2: 0.6304, CSI: 0.6595, POD: 0.8129, FAR: 0.2224
+
+Train epoch 25:
+253it [00:09, 25.34it/s]
+train_loss: 0.4814
+08/23 11:00:05 AM | Epoch: 25/0.481---Train,0.486----Test,RMSE29.222,NRMSE0.0323,MAE25.019,R20.618,CSI0.634,POD0.738,FAR0.182
+
+08/23 11:00:05 AM | Epoch: 25/0.481---Train,0.486----Test,RMSE29.222,NRMSE0.0323,MAE25.019,R20.618,CSI0.634,POD0.738,FAR0.182
+
+INFO:gal:Epoch: 25/0.481---Train,0.486----Test,RMSE29.222,NRMSE0.0323,MAE25.019,R20.618,CSI0.634,POD0.738,FAR0.182
+
+rmse 29.221664
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/25/model.pth
+Train loss: 0.4814, Test loss: 0.4862, RMSE: 29.22,NRMSE: 0.0323, MAE: 25.02,R2: 0.6182, CSI: 0.6338, POD: 0.7381, FAR: 0.1822
+
+Train epoch 26:
+253it [00:09, 27.73it/s]
+train_loss: 0.4830
+08/23 11:00:17 AM | Epoch: 26/0.483---Train,0.477----Test,RMSE30.533,NRMSE0.0338,MAE26.415,R20.625,CSI0.639,POD0.835,FAR0.268
+
+08/23 11:00:17 AM | Epoch: 26/0.483---Train,0.477----Test,RMSE30.533,NRMSE0.0338,MAE26.415,R20.625,CSI0.639,POD0.835,FAR0.268
+
+INFO:gal:Epoch: 26/0.483---Train,0.477----Test,RMSE30.533,NRMSE0.0338,MAE26.415,R20.625,CSI0.639,POD0.835,FAR0.268
+
+rmse 30.533493
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/26/model.pth
+Train loss: 0.4830, Test loss: 0.4771, RMSE: 30.53,NRMSE: 0.0338, MAE: 26.42,R2: 0.6254, CSI: 0.6393, POD: 0.8345, FAR: 0.2680
+
+Train epoch 27:
+253it [00:09, 25.88it/s]
+train_loss: 0.4816
+08/23 11:00:29 AM | Epoch: 27/0.482---Train,0.469----Test,RMSE28.708,NRMSE0.0318,MAE24.617,R20.632,CSI0.658,POD0.810,FAR0.222
+
+08/23 11:00:29 AM | Epoch: 27/0.482---Train,0.469----Test,RMSE28.708,NRMSE0.0318,MAE24.617,R20.632,CSI0.658,POD0.810,FAR0.222
+
+INFO:gal:Epoch: 27/0.482---Train,0.469----Test,RMSE28.708,NRMSE0.0318,MAE24.617,R20.632,CSI0.658,POD0.810,FAR0.222
+
+rmse 28.708447
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/27/model.pth
+Train loss: 0.4816, Test loss: 0.4690, RMSE: 28.71,NRMSE: 0.0318, MAE: 24.62,R2: 0.6317, CSI: 0.6579, POD: 0.8097, FAR: 0.2218
+
+Train epoch 28:
+253it [00:10, 24.31it/s]
+train_loss: 0.4780
+08/23 11:00:41 AM | Epoch: 28/0.478---Train,0.474----Test,RMSE28.132,NRMSE0.0311,MAE24.076,R20.628,CSI0.658,POD0.807,FAR0.219
+
+08/23 11:00:41 AM | Epoch: 28/0.478---Train,0.474----Test,RMSE28.132,NRMSE0.0311,MAE24.076,R20.628,CSI0.658,POD0.807,FAR0.219
+
+INFO:gal:Epoch: 28/0.478---Train,0.474----Test,RMSE28.132,NRMSE0.0311,MAE24.076,R20.628,CSI0.658,POD0.807,FAR0.219
+
+rmse 28.131514
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/28/model.pth
+Train loss: 0.4780, Test loss: 0.4736, RMSE: 28.13,NRMSE: 0.0311, MAE: 24.08,R2: 0.6281, CSI: 0.6582, POD: 0.8074, FAR: 0.2193
+
+Train epoch 29:
+253it [00:10, 24.28it/s]
+train_loss: 0.4783
+08/23 11:00:54 AM | Epoch: 29/0.478---Train,0.464----Test,RMSE29.983,NRMSE0.0332,MAE25.849,R20.636,CSI0.644,POD0.836,FAR0.263
+
+08/23 11:00:54 AM | Epoch: 29/0.478---Train,0.464----Test,RMSE29.983,NRMSE0.0332,MAE25.849,R20.636,CSI0.644,POD0.836,FAR0.263
+
+INFO:gal:Epoch: 29/0.478---Train,0.464----Test,RMSE29.983,NRMSE0.0332,MAE25.849,R20.636,CSI0.644,POD0.836,FAR0.263
+
+rmse 29.983135
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/29/model.pth
+Train loss: 0.4783, Test loss: 0.4639, RMSE: 29.98,NRMSE: 0.0332, MAE: 25.85,R2: 0.6357, CSI: 0.6442, POD: 0.8359, FAR: 0.2626
+
+Train epoch 30:
+253it [00:13, 19.21it/s]
+train_loss: 0.4780
+08/23 11:01:09 AM | Epoch: 30/0.478---Train,0.449----Test,RMSE27.851,NRMSE0.0308,MAE23.764,R20.647,CSI0.647,POD0.783,FAR0.211
+
+08/23 11:01:09 AM | Epoch: 30/0.478---Train,0.449----Test,RMSE27.851,NRMSE0.0308,MAE23.764,R20.647,CSI0.647,POD0.783,FAR0.211
+
+INFO:gal:Epoch: 30/0.478---Train,0.449----Test,RMSE27.851,NRMSE0.0308,MAE23.764,R20.647,CSI0.647,POD0.783,FAR0.211
+
+rmse 27.85079
+Save model: /content/drive/MyDrive/BTP-03/GC-LSTM/Results/16_8/SAGNN/20230823105428/00/30/model.pth
+Train loss: 0.4780, Test loss: 0.4490, RMSE: 27.85,NRMSE: 0.0308, MAE: 23.76,R2: 0.6474, CSI: 0.6475, POD: 0.7829, FAR: 0.2109
+
+Train epoch 31:
+253it [00:12, 20.81it/s]
+train_loss: nan
+<ipython-input-22-3a2f2e770acd>:77: RuntimeWarning: invalid value encountered in long_scalars
+  csi = hit / (hit + falsealarm + miss)
+<ipython-input-22-3a2f2e770acd>:78: RuntimeWarning: invalid value encountered in long_scalars
+  pod = hit / (hit + miss)
+<ipython-input-22-3a2f2e770acd>:79: RuntimeWarning: invalid value encountered in long_scalars
+  far = falsealarm / (hit + falsealarm)
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-22-3a2f2e770acd> in <cell line: 417>()
+    416 
+    417 if __name__ == '__main__':
+--> 418     main()
+
+5 frames
+/usr/local/lib/python3.10/dist-packages/sklearn/utils/validation.py in _assert_all_finite(X, allow_nan, msg_dtype, estimator_name, input_name)
+    159                 "#estimators-that-handle-nan-values"
+    160             )
+--> 161         raise ValueError(msg_err)
+    162 
+    163 
+
+ValueError: Input contains NaN.

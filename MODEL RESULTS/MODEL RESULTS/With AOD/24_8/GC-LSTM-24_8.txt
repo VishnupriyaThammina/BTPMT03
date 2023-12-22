@@ -1,0 +1,599 @@
+
+No. 0 experiment ~~~
+<torch.utils.data.dataloader.DataLoader object at 0x79a328b90d30>
+GC_LSTM(
+  (conv): ChebConv(11, 2, K=2, normalization=sym)
+  (lstm_cell): LSTMCell(
+    (x2h): Linear(in_features=13, out_features=128, bias=True)
+    (h2h): Linear(in_features=32, out_features=128, bias=True)
+  )
+  (fc_out): Linear(in_features=32, out_features=1, bias=True)
+)
++----------------------+------------+
+|       Modules        | Parameters |
++----------------------+------------+
+|      conv.bias       |     2      |
+|  conv.lins.0.weight  |     22     |
+|  conv.lins.1.weight  |     22     |
+| lstm_cell.x2h.weight |    1664    |
+|  lstm_cell.x2h.bias  |    128     |
+| lstm_cell.h2h.weight |    4096    |
+|  lstm_cell.h2h.bias  |    128     |
+|    fc_out.weight     |     32     |
+|     fc_out.bias      |     1      |
++----------------------+------------+
+Total Trainable Params: 6095
+
+Train epoch 0:
+126it [00:43,  2.87it/s]
+train_loss: 0.6527
+rmse 29.388626
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/0/model.pth
+Train loss: 0.6527, Test loss: 0.5403, RMSE: 29.39,NRMSE: 0.0325, MAE: 25.22,R2: 0.5757, CSI: 0.6502, POD: 0.7694, FAR: 0.1925
+08/17 04:09:23 PM | Epoch: 0/0.653---Train,0.540----Test,RMSE29.389,NRMSE0.0325,MAE25.215,R20.576,CSI0.650,POD0.769,FAR0.192
+
+INFO:gal:Epoch: 0/0.653---Train,0.540----Test,RMSE29.389,NRMSE0.0325,MAE25.215,R20.576,CSI0.650,POD0.769,FAR0.192
+
+
+Train epoch 1:
+126it [00:40,  3.14it/s]
+train_loss: 0.5156
+08/17 04:10:17 PM | Epoch: 1/0.516---Train,0.530----Test,RMSE30.035,NRMSE0.0332,MAE25.892,R20.584,CSI0.657,POD0.805,FAR0.218
+
+INFO:gal:Epoch: 1/0.516---Train,0.530----Test,RMSE30.035,NRMSE0.0332,MAE25.892,R20.584,CSI0.657,POD0.805,FAR0.218
+
+rmse 30.03499
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/1/model.pth
+Train loss: 0.5156, Test loss: 0.5300, RMSE: 30.03,NRMSE: 0.0332, MAE: 25.89,R2: 0.5838, CSI: 0.6569, POD: 0.8047, FAR: 0.2185
+
+Train epoch 2:
+126it [00:40,  3.10it/s]
+train_loss: 0.4889
+08/17 04:11:12 PM | Epoch: 2/0.489---Train,0.610----Test,RMSE38.974,NRMSE0.0431,MAE34.844,R20.521,CSI0.569,POD0.945,FAR0.411
+
+INFO:gal:Epoch: 2/0.489---Train,0.610----Test,RMSE38.974,NRMSE0.0431,MAE34.844,R20.521,CSI0.569,POD0.945,FAR0.411
+
+rmse 38.97414
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/2/model.pth
+Train loss: 0.4889, Test loss: 0.6105, RMSE: 38.97,NRMSE: 0.0431, MAE: 34.84,R2: 0.5206, CSI: 0.5694, POD: 0.9448, FAR: 0.4110
+
+Train epoch 3:
+126it [00:40,  3.12it/s]
+train_loss: 0.4779
+08/17 04:12:06 PM | Epoch: 3/0.478---Train,0.499----Test,RMSE29.265,NRMSE0.0324,MAE25.128,R20.608,CSI0.660,POD0.822,FAR0.229
+
+INFO:gal:Epoch: 3/0.478---Train,0.499----Test,RMSE29.265,NRMSE0.0324,MAE25.128,R20.608,CSI0.660,POD0.822,FAR0.229
+
+rmse 29.264837
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/3/model.pth
+Train loss: 0.4779, Test loss: 0.4990, RMSE: 29.26,NRMSE: 0.0324, MAE: 25.13,R2: 0.6081, CSI: 0.6604, POD: 0.8218, FAR: 0.2292
+
+Train epoch 4:
+126it [00:40,  3.13it/s]
+train_loss: 0.4697
+08/17 04:13:00 PM | Epoch: 4/0.470---Train,0.508----Test,RMSE29.634,NRMSE0.0328,MAE25.447,R20.601,CSI0.654,POD0.806,FAR0.223
+
+INFO:gal:Epoch: 4/0.470---Train,0.508----Test,RMSE29.634,NRMSE0.0328,MAE25.447,R20.601,CSI0.654,POD0.806,FAR0.223
+
+rmse 29.633623
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/4/model.pth
+Train loss: 0.4697, Test loss: 0.5075, RMSE: 29.63,NRMSE: 0.0328, MAE: 25.45,R2: 0.6014, CSI: 0.6543, POD: 0.8057, FAR: 0.2231
+
+Train epoch 5:
+126it [00:40,  3.13it/s]
+train_loss: 0.4580
+08/17 04:13:55 PM | Epoch: 5/0.458---Train,0.502----Test,RMSE28.634,NRMSE0.0317,MAE24.462,R20.606,CSI0.658,POD0.791,FAR0.204
+
+INFO:gal:Epoch: 5/0.458---Train,0.502----Test,RMSE28.634,NRMSE0.0317,MAE24.462,R20.606,CSI0.658,POD0.791,FAR0.204
+
+rmse 28.633621
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/5/model.pth
+Train loss: 0.4580, Test loss: 0.5017, RMSE: 28.63,NRMSE: 0.0317, MAE: 24.46,R2: 0.6060, CSI: 0.6578, POD: 0.7910, FAR: 0.2039
+
+Train epoch 6:
+126it [00:41,  3.04it/s]
+train_loss: 0.4721
+08/17 04:14:50 PM | Epoch: 6/0.472---Train,0.501----Test,RMSE28.570,NRMSE0.0316,MAE24.369,R20.607,CSI0.645,POD0.755,FAR0.183
+
+INFO:gal:Epoch: 6/0.472---Train,0.501----Test,RMSE28.570,NRMSE0.0316,MAE24.369,R20.607,CSI0.645,POD0.755,FAR0.183
+
+rmse 28.569983
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/6/model.pth
+Train loss: 0.4721, Test loss: 0.5007, RMSE: 28.57,NRMSE: 0.0316, MAE: 24.37,R2: 0.6068, CSI: 0.6454, POD: 0.7546, FAR: 0.1832
+
+Train epoch 7:
+126it [00:39,  3.17it/s]
+train_loss: 0.4482
+08/17 04:15:44 PM | Epoch: 7/0.448---Train,0.508----Test,RMSE29.371,NRMSE0.0325,MAE25.144,R20.601,CSI0.656,POD0.791,FAR0.207
+
+INFO:gal:Epoch: 7/0.448---Train,0.508----Test,RMSE29.371,NRMSE0.0325,MAE25.144,R20.601,CSI0.656,POD0.791,FAR0.207
+
+rmse 29.370508
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/7/model.pth
+Train loss: 0.4482, Test loss: 0.5080, RMSE: 29.37,NRMSE: 0.0325, MAE: 25.14,R2: 0.6011, CSI: 0.6556, POD: 0.7908, FAR: 0.2068
+
+Train epoch 8:
+126it [00:40,  3.15it/s]
+train_loss: 0.4449
+08/17 04:16:38 PM | Epoch: 8/0.445---Train,0.493----Test,RMSE31.157,NRMSE0.0345,MAE27.132,R20.613,CSI0.637,POD0.883,FAR0.304
+
+INFO:gal:Epoch: 8/0.445---Train,0.493----Test,RMSE31.157,NRMSE0.0345,MAE27.132,R20.613,CSI0.637,POD0.883,FAR0.304
+
+rmse 31.156635
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/8/model.pth
+Train loss: 0.4449, Test loss: 0.4930, RMSE: 31.16,NRMSE: 0.0345, MAE: 27.13,R2: 0.6128, CSI: 0.6370, POD: 0.8829, FAR: 0.3042
+
+Train epoch 9:
+126it [00:39,  3.15it/s]
+train_loss: 0.4438
+08/17 04:17:32 PM | Epoch: 9/0.444---Train,0.507----Test,RMSE33.583,NRMSE0.0371,MAE29.550,R20.601,CSI0.613,POD0.919,FAR0.352
+
+INFO:gal:Epoch: 9/0.444---Train,0.507----Test,RMSE33.583,NRMSE0.0371,MAE29.550,R20.601,CSI0.613,POD0.919,FAR0.352
+
+rmse 33.58268
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/9/model.pth
+Train loss: 0.4438, Test loss: 0.5075, RMSE: 33.58,NRMSE: 0.0371, MAE: 29.55,R2: 0.6015, CSI: 0.6130, POD: 0.9187, FAR: 0.3518
+
+Train epoch 10:
+126it [00:40,  3.14it/s]
+train_loss: 0.4370
+08/17 04:18:26 PM | Epoch: 10/0.437---Train,0.469----Test,RMSE28.193,NRMSE0.0312,MAE23.989,R20.632,CSI0.657,POD0.784,FAR0.198
+
+INFO:gal:Epoch: 10/0.437---Train,0.469----Test,RMSE28.193,NRMSE0.0312,MAE23.989,R20.632,CSI0.657,POD0.784,FAR0.198
+
+rmse 28.193148
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/10/model.pth
+Train loss: 0.4370, Test loss: 0.4686, RMSE: 28.19,NRMSE: 0.0312, MAE: 23.99,R2: 0.6320, CSI: 0.6566, POD: 0.7836, FAR: 0.1980
+
+Train epoch 11:
+126it [00:39,  3.15it/s]
+train_loss: 0.4410
+08/17 04:19:20 PM | Epoch: 11/0.441---Train,0.461----Test,RMSE28.334,NRMSE0.0313,MAE24.297,R20.638,CSI0.661,POD0.829,FAR0.235
+
+INFO:gal:Epoch: 11/0.441---Train,0.461----Test,RMSE28.334,NRMSE0.0313,MAE24.297,R20.638,CSI0.661,POD0.829,FAR0.235
+
+rmse 28.3343
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/11/model.pth
+Train loss: 0.4410, Test loss: 0.4610, RMSE: 28.33,NRMSE: 0.0313, MAE: 24.30,R2: 0.6379, CSI: 0.6607, POD: 0.8288, FAR: 0.2349
+
+Train epoch 12:
+126it [00:39,  3.19it/s]
+train_loss: 0.4319
+08/17 04:20:14 PM | Epoch: 12/0.432---Train,0.468----Test,RMSE28.269,NRMSE0.0313,MAE24.185,R20.632,CSI0.660,POD0.812,FAR0.221
+
+INFO:gal:Epoch: 12/0.432---Train,0.468----Test,RMSE28.269,NRMSE0.0313,MAE24.185,R20.632,CSI0.660,POD0.812,FAR0.221
+
+rmse 28.269386
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/12/model.pth
+Train loss: 0.4319, Test loss: 0.4683, RMSE: 28.27,NRMSE: 0.0313, MAE: 24.19,R2: 0.6322, CSI: 0.6598, POD: 0.8119, FAR: 0.2212
+
+Train epoch 13:
+126it [00:41,  3.03it/s]
+train_loss: 0.4326
+08/17 04:21:09 PM | Epoch: 13/0.433---Train,0.468----Test,RMSE29.830,NRMSE0.0330,MAE25.842,R20.633,CSI0.653,POD0.871,FAR0.277
+
+INFO:gal:Epoch: 13/0.433---Train,0.468----Test,RMSE29.830,NRMSE0.0330,MAE25.842,R20.633,CSI0.653,POD0.871,FAR0.277
+
+rmse 29.829842
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/13/model.pth
+Train loss: 0.4326, Test loss: 0.4678, RMSE: 29.83,NRMSE: 0.0330, MAE: 25.84,R2: 0.6326, CSI: 0.6528, POD: 0.8706, FAR: 0.2770
+
+Train epoch 14:
+126it [00:39,  3.15it/s]
+train_loss: 0.4271
+08/17 04:22:03 PM | Epoch: 14/0.427---Train,0.495----Test,RMSE32.235,NRMSE0.0357,MAE28.195,R20.611,CSI0.622,POD0.893,FAR0.328
+
+INFO:gal:Epoch: 14/0.427---Train,0.495----Test,RMSE32.235,NRMSE0.0357,MAE28.195,R20.611,CSI0.622,POD0.893,FAR0.328
+
+rmse 32.23541
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/14/model.pth
+Train loss: 0.4271, Test loss: 0.4952, RMSE: 32.24,NRMSE: 0.0357, MAE: 28.20,R2: 0.6111, CSI: 0.6220, POD: 0.8932, FAR: 0.3281
+
+Train epoch 15:
+126it [00:41,  3.05it/s]
+train_loss: 0.4270
+08/17 04:22:58 PM | Epoch: 15/0.427---Train,0.511----Test,RMSE29.127,NRMSE0.0322,MAE24.670,R20.599,CSI0.597,POD0.658,FAR0.135
+
+INFO:gal:Epoch: 15/0.427---Train,0.511----Test,RMSE29.127,NRMSE0.0322,MAE24.670,R20.599,CSI0.597,POD0.658,FAR0.135
+
+rmse 29.126827
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/15/model.pth
+Train loss: 0.4270, Test loss: 0.5109, RMSE: 29.13,NRMSE: 0.0322, MAE: 24.67,R2: 0.5988, CSI: 0.5971, POD: 0.6581, FAR: 0.1345
+
+Train epoch 16:
+126it [00:39,  3.20it/s]
+train_loss: 0.4255
+08/17 04:23:51 PM | Epoch: 16/0.425---Train,0.465----Test,RMSE28.981,NRMSE0.0321,MAE24.950,R20.635,CSI0.658,POD0.827,FAR0.237
+
+INFO:gal:Epoch: 16/0.425---Train,0.465----Test,RMSE28.981,NRMSE0.0321,MAE24.950,R20.635,CSI0.658,POD0.827,FAR0.237
+
+rmse 28.981466
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/16/model.pth
+Train loss: 0.4255, Test loss: 0.4648, RMSE: 28.98,NRMSE: 0.0321, MAE: 24.95,R2: 0.6350, CSI: 0.6580, POD: 0.8274, FAR: 0.2374
+
+Train epoch 17:
+126it [00:40,  3.12it/s]
+train_loss: 0.4314
+08/17 04:24:46 PM | Epoch: 17/0.431---Train,0.461----Test,RMSE29.419,NRMSE0.0325,MAE25.419,R20.638,CSI0.658,POD0.861,FAR0.263
+
+INFO:gal:Epoch: 17/0.431---Train,0.461----Test,RMSE29.419,NRMSE0.0325,MAE25.419,R20.638,CSI0.658,POD0.861,FAR0.263
+
+rmse 29.418898
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/17/model.pth
+Train loss: 0.4314, Test loss: 0.4613, RMSE: 29.42,NRMSE: 0.0325, MAE: 25.42,R2: 0.6377, CSI: 0.6580, POD: 0.8606, FAR: 0.2634
+
+Train epoch 18:
+126it [00:39,  3.16it/s]
+train_loss: 0.4233
+08/17 04:25:39 PM | Epoch: 18/0.423---Train,0.464----Test,RMSE28.057,NRMSE0.0310,MAE23.778,R20.636,CSI0.640,POD0.739,FAR0.172
+
+INFO:gal:Epoch: 18/0.423---Train,0.464----Test,RMSE28.057,NRMSE0.0310,MAE23.778,R20.636,CSI0.640,POD0.739,FAR0.172
+
+rmse 28.057425
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/18/model.pth
+Train loss: 0.4233, Test loss: 0.4638, RMSE: 28.06,NRMSE: 0.0310, MAE: 23.78,R2: 0.6357, CSI: 0.6405, POD: 0.7387, FAR: 0.1719
+
+Train epoch 19:
+126it [00:39,  3.15it/s]
+train_loss: 0.4213
+08/17 04:26:34 PM | Epoch: 19/0.421---Train,0.448----Test,RMSE27.926,NRMSE0.0309,MAE23.820,R20.648,CSI0.657,POD0.800,FAR0.214
+
+INFO:gal:Epoch: 19/0.421---Train,0.448----Test,RMSE27.926,NRMSE0.0309,MAE23.820,R20.648,CSI0.657,POD0.800,FAR0.214
+
+rmse 27.926289
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/19/model.pth
+Train loss: 0.4213, Test loss: 0.4476, RMSE: 27.93,NRMSE: 0.0309, MAE: 23.82,R2: 0.6484, CSI: 0.6567, POD: 0.7999, FAR: 0.2142
+
+Train epoch 20:
+126it [00:40,  3.11it/s]
+train_loss: 0.4204
+08/17 04:27:28 PM | Epoch: 20/0.420---Train,0.449----Test,RMSE28.193,NRMSE0.0312,MAE24.192,R20.648,CSI0.665,POD0.840,FAR0.238
+
+INFO:gal:Epoch: 20/0.420---Train,0.449----Test,RMSE28.193,NRMSE0.0312,MAE24.192,R20.648,CSI0.665,POD0.840,FAR0.238
+
+rmse 28.1933
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/20/model.pth
+Train loss: 0.4204, Test loss: 0.4488, RMSE: 28.19,NRMSE: 0.0312, MAE: 24.19,R2: 0.6476, CSI: 0.6650, POD: 0.8397, FAR: 0.2383
+
+Train epoch 21:
+126it [00:39,  3.20it/s]
+train_loss: 0.4142
+08/17 04:28:21 PM | Epoch: 21/0.414---Train,0.442----Test,RMSE27.314,NRMSE0.0302,MAE23.192,R20.653,CSI0.662,POD0.798,FAR0.205
+
+INFO:gal:Epoch: 21/0.414---Train,0.442----Test,RMSE27.314,NRMSE0.0302,MAE23.192,R20.653,CSI0.662,POD0.798,FAR0.205
+
+rmse 27.31377
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/21/model.pth
+Train loss: 0.4142, Test loss: 0.4420, RMSE: 27.31,NRMSE: 0.0302, MAE: 23.19,R2: 0.6528, CSI: 0.6615, POD: 0.7976, FAR: 0.2050
+
+Train epoch 22:
+126it [00:40,  3.14it/s]
+train_loss: 0.4175
+08/17 04:29:14 PM | Epoch: 22/0.418---Train,0.455----Test,RMSE28.006,NRMSE0.0310,MAE23.799,R20.643,CSI0.649,POD0.770,FAR0.195
+
+INFO:gal:Epoch: 22/0.418---Train,0.455----Test,RMSE28.006,NRMSE0.0310,MAE23.799,R20.643,CSI0.649,POD0.770,FAR0.195
+
+rmse 28.005993
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/22/model.pth
+Train loss: 0.4175, Test loss: 0.4546, RMSE: 28.01,NRMSE: 0.0310, MAE: 23.80,R2: 0.6430, CSI: 0.6488, POD: 0.7697, FAR: 0.1950
+
+Train epoch 23:
+126it [00:39,  3.16it/s]
+train_loss: 0.4147
+08/17 04:30:08 PM | Epoch: 23/0.415---Train,0.465----Test,RMSE27.534,NRMSE0.0305,MAE23.294,R20.635,CSI0.651,POD0.758,FAR0.178
+
+INFO:gal:Epoch: 23/0.415---Train,0.465----Test,RMSE27.534,NRMSE0.0305,MAE23.294,R20.635,CSI0.651,POD0.758,FAR0.178
+
+rmse 27.534252
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/23/model.pth
+Train loss: 0.4147, Test loss: 0.4647, RMSE: 27.53,NRMSE: 0.0305, MAE: 23.29,R2: 0.6350, CSI: 0.6510, POD: 0.7581, FAR: 0.1784
+
+Train epoch 24:
+126it [00:39,  3.16it/s]
+train_loss: 0.4132
+08/17 04:31:03 PM | Epoch: 24/0.413---Train,0.440----Test,RMSE28.402,NRMSE0.0314,MAE24.414,R20.655,CSI0.663,POD0.847,FAR0.247
+
+INFO:gal:Epoch: 24/0.413---Train,0.440----Test,RMSE28.402,NRMSE0.0314,MAE24.414,R20.655,CSI0.663,POD0.847,FAR0.247
+
+rmse 28.401516
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/24/model.pth
+Train loss: 0.4132, Test loss: 0.4398, RMSE: 28.40,NRMSE: 0.0314, MAE: 24.41,R2: 0.6546, CSI: 0.6626, POD: 0.8472, FAR: 0.2474
+
+Train epoch 25:
+126it [00:39,  3.16it/s]
+train_loss: 0.4153
+08/17 04:31:57 PM | Epoch: 25/0.415---Train,0.449----Test,RMSE27.311,NRMSE0.0302,MAE23.156,R20.648,CSI0.659,POD0.783,FAR0.193
+
+INFO:gal:Epoch: 25/0.415---Train,0.449----Test,RMSE27.311,NRMSE0.0302,MAE23.156,R20.648,CSI0.659,POD0.783,FAR0.193
+
+rmse 27.31056
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/25/model.pth
+Train loss: 0.4153, Test loss: 0.4485, RMSE: 27.31,NRMSE: 0.0302, MAE: 23.16,R2: 0.6477, CSI: 0.6593, POD: 0.7826, FAR: 0.1928
+
+Train epoch 26:
+126it [00:40,  3.12it/s]
+train_loss: 0.4099
+08/17 04:32:51 PM | Epoch: 26/0.410---Train,0.444----Test,RMSE27.370,NRMSE0.0303,MAE23.254,R20.652,CSI0.663,POD0.803,FAR0.208
+
+INFO:gal:Epoch: 26/0.410---Train,0.444----Test,RMSE27.370,NRMSE0.0303,MAE23.254,R20.652,CSI0.663,POD0.803,FAR0.208
+
+rmse 27.370422
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/26/model.pth
+Train loss: 0.4099, Test loss: 0.4436, RMSE: 27.37,NRMSE: 0.0303, MAE: 23.25,R2: 0.6516, CSI: 0.6628, POD: 0.8025, FAR: 0.2081
+
+Train epoch 27:
+126it [00:40,  3.11it/s]
+train_loss: 0.4097
+08/17 04:33:45 PM | Epoch: 27/0.410---Train,0.434----Test,RMSE27.434,NRMSE0.0303,MAE23.310,R20.659,CSI0.660,POD0.798,FAR0.207
+
+INFO:gal:Epoch: 27/0.410---Train,0.434----Test,RMSE27.434,NRMSE0.0303,MAE23.310,R20.659,CSI0.660,POD0.798,FAR0.207
+
+rmse 27.434269
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/27/model.pth
+Train loss: 0.4097, Test loss: 0.4337, RMSE: 27.43,NRMSE: 0.0303, MAE: 23.31,R2: 0.6594, CSI: 0.6603, POD: 0.7980, FAR: 0.2073
+
+Train epoch 28:
+126it [00:40,  3.13it/s]
+train_loss: 0.4100
+08/17 04:34:39 PM | Epoch: 28/0.410---Train,0.447----Test,RMSE28.149,NRMSE0.0311,MAE24.111,R20.649,CSI0.661,POD0.840,FAR0.243
+
+INFO:gal:Epoch: 28/0.410---Train,0.447----Test,RMSE28.149,NRMSE0.0311,MAE24.111,R20.649,CSI0.661,POD0.840,FAR0.243
+
+rmse 28.149286
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/28/model.pth
+Train loss: 0.4100, Test loss: 0.4471, RMSE: 28.15,NRMSE: 0.0311, MAE: 24.11,R2: 0.6488, CSI: 0.6615, POD: 0.8401, FAR: 0.2432
+
+Train epoch 29:
+126it [00:40,  3.11it/s]
+train_loss: 0.4083
+08/17 04:35:34 PM | Epoch: 29/0.408---Train,0.441----Test,RMSE27.398,NRMSE0.0303,MAE23.156,R20.654,CSI0.649,POD0.751,FAR0.173
+
+INFO:gal:Epoch: 29/0.408---Train,0.441----Test,RMSE27.398,NRMSE0.0303,MAE23.156,R20.654,CSI0.649,POD0.751,FAR0.173
+
+rmse 27.397856
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/29/model.pth
+Train loss: 0.4083, Test loss: 0.4411, RMSE: 27.40,NRMSE: 0.0303, MAE: 23.16,R2: 0.6536, CSI: 0.6491, POD: 0.7509, FAR: 0.1727
+
+Train epoch 30:
+126it [00:40,  3.14it/s]
+train_loss: 0.4104
+08/17 04:36:29 PM | Epoch: 30/0.410---Train,0.455----Test,RMSE27.515,NRMSE0.0304,MAE23.388,R20.643,CSI0.660,POD0.789,FAR0.199
+
+INFO:gal:Epoch: 30/0.410---Train,0.455----Test,RMSE27.515,NRMSE0.0304,MAE23.388,R20.643,CSI0.660,POD0.789,FAR0.199
+
+rmse 27.515335
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/30/model.pth
+Train loss: 0.4104, Test loss: 0.4549, RMSE: 27.52,NRMSE: 0.0304, MAE: 23.39,R2: 0.6427, CSI: 0.6599, POD: 0.7891, FAR: 0.1987
+
+Train epoch 31:
+126it [00:40,  3.14it/s]
+train_loss: 0.4072
+08/17 04:37:23 PM | Epoch: 31/0.407---Train,0.430----Test,RMSE27.798,NRMSE0.0307,MAE23.749,R20.662,CSI0.660,POD0.834,FAR0.240
+
+INFO:gal:Epoch: 31/0.407---Train,0.430----Test,RMSE27.798,NRMSE0.0307,MAE23.749,R20.662,CSI0.660,POD0.834,FAR0.240
+
+rmse 27.797586
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/31/model.pth
+Train loss: 0.4072, Test loss: 0.4301, RMSE: 27.80,NRMSE: 0.0307, MAE: 23.75,R2: 0.6622, CSI: 0.6604, POD: 0.8342, FAR: 0.2397
+
+Train epoch 32:
+126it [00:39,  3.15it/s]
+train_loss: 0.4051
+08/17 04:38:17 PM | Epoch: 32/0.405---Train,0.443----Test,RMSE29.005,NRMSE0.0321,MAE24.944,R20.652,CSI0.659,POD0.845,FAR0.250
+
+INFO:gal:Epoch: 32/0.405---Train,0.443----Test,RMSE29.005,NRMSE0.0321,MAE24.944,R20.652,CSI0.659,POD0.845,FAR0.250
+
+rmse 29.004921
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/32/model.pth
+Train loss: 0.4051, Test loss: 0.4432, RMSE: 29.00,NRMSE: 0.0321, MAE: 24.94,R2: 0.6519, CSI: 0.6590, POD: 0.8450, FAR: 0.2504
+
+Train epoch 33:
+126it [00:39,  3.15it/s]
+train_loss: 0.4056
+08/17 04:39:10 PM | Epoch: 33/0.406---Train,0.430----Test,RMSE27.650,NRMSE0.0306,MAE23.584,R20.663,CSI0.665,POD0.837,FAR0.236
+
+INFO:gal:Epoch: 33/0.406---Train,0.430----Test,RMSE27.650,NRMSE0.0306,MAE23.584,R20.663,CSI0.665,POD0.837,FAR0.236
+
+rmse 27.649864
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/33/model.pth
+Train loss: 0.4056, Test loss: 0.4297, RMSE: 27.65,NRMSE: 0.0306, MAE: 23.58,R2: 0.6625, CSI: 0.6647, POD: 0.8368, FAR: 0.2363
+
+Train epoch 34:
+126it [00:40,  3.08it/s]
+train_loss: 0.4089
+08/17 04:40:05 PM | Epoch: 34/0.409---Train,0.440----Test,RMSE29.291,NRMSE0.0324,MAE25.284,R20.654,CSI0.658,POD0.869,FAR0.270
+
+INFO:gal:Epoch: 34/0.409---Train,0.440----Test,RMSE29.291,NRMSE0.0324,MAE25.284,R20.654,CSI0.658,POD0.869,FAR0.270
+
+rmse 29.2912
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/34/model.pth
+Train loss: 0.4089, Test loss: 0.4404, RMSE: 29.29,NRMSE: 0.0324, MAE: 25.28,R2: 0.6541, CSI: 0.6575, POD: 0.8693, FAR: 0.2704
+
+Train epoch 35:
+126it [00:39,  3.20it/s]
+train_loss: 0.4079
+08/17 04:40:58 PM | Epoch: 35/0.408---Train,0.444----Test,RMSE27.217,NRMSE0.0301,MAE23.120,R20.651,CSI0.665,POD0.806,FAR0.208
+
+INFO:gal:Epoch: 35/0.408---Train,0.444----Test,RMSE27.217,NRMSE0.0301,MAE23.120,R20.651,CSI0.665,POD0.806,FAR0.208
+
+rmse 27.217405
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/35/model.pth
+Train loss: 0.4079, Test loss: 0.4444, RMSE: 27.22,NRMSE: 0.0301, MAE: 23.12,R2: 0.6509, CSI: 0.6652, POD: 0.8059, FAR: 0.2079
+
+Train epoch 36:
+126it [00:40,  3.12it/s]
+train_loss: 0.4050
+08/17 04:41:52 PM | Epoch: 36/0.405---Train,0.433----Test,RMSE27.767,NRMSE0.0307,MAE23.567,R20.660,CSI0.647,POD0.768,FAR0.196
+
+INFO:gal:Epoch: 36/0.405---Train,0.433----Test,RMSE27.767,NRMSE0.0307,MAE23.567,R20.660,CSI0.647,POD0.768,FAR0.196
+
+rmse 27.767004
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/36/model.pth
+Train loss: 0.4050, Test loss: 0.4329, RMSE: 27.77,NRMSE: 0.0307, MAE: 23.57,R2: 0.6600, CSI: 0.6474, POD: 0.7684, FAR: 0.1957
+
+Train epoch 37:
+126it [00:39,  3.16it/s]
+train_loss: 0.4080
+08/17 04:42:46 PM | Epoch: 37/0.408---Train,0.436----Test,RMSE28.110,NRMSE0.0311,MAE24.086,R20.657,CSI0.665,POD0.835,FAR0.234
+
+INFO:gal:Epoch: 37/0.408---Train,0.436----Test,RMSE28.110,NRMSE0.0311,MAE24.086,R20.657,CSI0.665,POD0.835,FAR0.234
+
+rmse 28.11018
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/37/model.pth
+Train loss: 0.4080, Test loss: 0.4364, RMSE: 28.11,NRMSE: 0.0311, MAE: 24.09,R2: 0.6572, CSI: 0.6653, POD: 0.8347, FAR: 0.2338
+
+Train epoch 38:
+126it [00:40,  3.15it/s]
+train_loss: 0.4058
+08/17 04:43:39 PM | Epoch: 38/0.406---Train,0.431----Test,RMSE27.726,NRMSE0.0307,MAE23.693,R20.661,CSI0.664,POD0.826,FAR0.228
+
+INFO:gal:Epoch: 38/0.406---Train,0.431----Test,RMSE27.726,NRMSE0.0307,MAE23.693,R20.661,CSI0.664,POD0.826,FAR0.228
+
+rmse 27.725632
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/38/model.pth
+Train loss: 0.4058, Test loss: 0.4315, RMSE: 27.73,NRMSE: 0.0307, MAE: 23.69,R2: 0.6611, CSI: 0.6640, POD: 0.8261, FAR: 0.2281
+
+Train epoch 39:
+126it [00:40,  3.12it/s]
+train_loss: 0.4065
+08/17 04:44:33 PM | Epoch: 39/0.407---Train,0.454----Test,RMSE27.639,NRMSE0.0306,MAE23.410,R20.644,CSI0.649,POD0.755,FAR0.178
+
+INFO:gal:Epoch: 39/0.407---Train,0.454----Test,RMSE27.639,NRMSE0.0306,MAE23.410,R20.644,CSI0.649,POD0.755,FAR0.178
+
+rmse 27.638655
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/39/model.pth
+Train loss: 0.4065, Test loss: 0.4536, RMSE: 27.64,NRMSE: 0.0306, MAE: 23.41,R2: 0.6438, CSI: 0.6488, POD: 0.7545, FAR: 0.1777
+
+Train epoch 40:
+126it [00:39,  3.18it/s]
+train_loss: 0.4037
+08/17 04:45:27 PM | Epoch: 40/0.404---Train,0.439----Test,RMSE27.161,NRMSE0.0300,MAE23.010,R20.655,CSI0.658,POD0.781,FAR0.193
+
+INFO:gal:Epoch: 40/0.404---Train,0.439----Test,RMSE27.161,NRMSE0.0300,MAE23.010,R20.655,CSI0.658,POD0.781,FAR0.193
+
+rmse 27.161375
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/40/model.pth
+Train loss: 0.4037, Test loss: 0.4391, RMSE: 27.16,NRMSE: 0.0300, MAE: 23.01,R2: 0.6551, CSI: 0.6577, POD: 0.7809, FAR: 0.1934
+
+Train epoch 41:
+126it [00:39,  3.16it/s]
+train_loss: 0.4055
+08/17 04:46:21 PM | Epoch: 41/0.405---Train,0.444----Test,RMSE28.985,NRMSE0.0321,MAE24.897,R20.651,CSI0.660,POD0.850,FAR0.253
+
+INFO:gal:Epoch: 41/0.405---Train,0.444----Test,RMSE28.985,NRMSE0.0321,MAE24.897,R20.651,CSI0.660,POD0.850,FAR0.253
+
+rmse 28.985172
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/41/model.pth
+Train loss: 0.4055, Test loss: 0.4438, RMSE: 28.99,NRMSE: 0.0321, MAE: 24.90,R2: 0.6515, CSI: 0.6603, POD: 0.8501, FAR: 0.2527
+
+Train epoch 42:
+126it [00:40,  3.14it/s]
+train_loss: 0.4036
+08/17 04:47:15 PM | Epoch: 42/0.404---Train,0.436----Test,RMSE27.418,NRMSE0.0303,MAE23.255,R20.658,CSI0.661,POD0.794,FAR0.202
+
+INFO:gal:Epoch: 42/0.404---Train,0.436----Test,RMSE27.418,NRMSE0.0303,MAE23.255,R20.658,CSI0.661,POD0.794,FAR0.202
+
+rmse 27.418072
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/42/model.pth
+Train loss: 0.4036, Test loss: 0.4358, RMSE: 27.42,NRMSE: 0.0303, MAE: 23.25,R2: 0.6577, CSI: 0.6611, POD: 0.7939, FAR: 0.2020
+
+Train epoch 43:
+126it [00:40,  3.11it/s]
+train_loss: 0.4065
+08/17 04:48:09 PM | Epoch: 43/0.406---Train,0.434----Test,RMSE27.644,NRMSE0.0306,MAE23.566,R20.659,CSI0.664,POD0.837,FAR0.238
+
+INFO:gal:Epoch: 43/0.406---Train,0.434----Test,RMSE27.644,NRMSE0.0306,MAE23.566,R20.659,CSI0.664,POD0.837,FAR0.238
+
+rmse 27.644012
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/43/model.pth
+Train loss: 0.4065, Test loss: 0.4340, RMSE: 27.64,NRMSE: 0.0306, MAE: 23.57,R2: 0.6591, CSI: 0.6639, POD: 0.8372, FAR: 0.2377
+
+Train epoch 44:
+126it [00:39,  3.18it/s]
+train_loss: 0.4048
+08/17 04:49:03 PM | Epoch: 44/0.405---Train,0.440----Test,RMSE29.790,NRMSE0.0329,MAE25.802,R20.654,CSI0.647,POD0.879,FAR0.289
+
+INFO:gal:Epoch: 44/0.405---Train,0.440----Test,RMSE29.790,NRMSE0.0329,MAE25.802,R20.654,CSI0.647,POD0.879,FAR0.289
+
+rmse 29.789583
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/44/model.pth
+Train loss: 0.4048, Test loss: 0.4404, RMSE: 29.79,NRMSE: 0.0329, MAE: 25.80,R2: 0.6541, CSI: 0.6471, POD: 0.8785, FAR: 0.2893
+
+Train epoch 45:
+126it [00:39,  3.16it/s]
+train_loss: 0.4016
+08/17 04:49:56 PM | Epoch: 45/0.402---Train,0.448----Test,RMSE27.722,NRMSE0.0307,MAE23.641,R20.649,CSI0.664,POD0.824,FAR0.227
+
+INFO:gal:Epoch: 45/0.402---Train,0.448----Test,RMSE27.722,NRMSE0.0307,MAE23.641,R20.649,CSI0.664,POD0.824,FAR0.227
+
+rmse 27.721739
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/45/model.pth
+Train loss: 0.4016, Test loss: 0.4476, RMSE: 27.72,NRMSE: 0.0307, MAE: 23.64,R2: 0.6485, CSI: 0.6636, POD: 0.8239, FAR: 0.2267
+
+Train epoch 46:
+126it [00:40,  3.15it/s]
+train_loss: 0.4045
+08/17 04:50:50 PM | Epoch: 46/0.405---Train,0.446----Test,RMSE27.278,NRMSE0.0302,MAE23.130,R20.650,CSI0.662,POD0.800,FAR0.206
+
+INFO:gal:Epoch: 46/0.405---Train,0.446----Test,RMSE27.278,NRMSE0.0302,MAE23.130,R20.650,CSI0.662,POD0.800,FAR0.206
+
+rmse 27.278473
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/46/model.pth
+Train loss: 0.4045, Test loss: 0.4458, RMSE: 27.28,NRMSE: 0.0302, MAE: 23.13,R2: 0.6498, CSI: 0.6624, POD: 0.7998, FAR: 0.2060
+
+Train epoch 47:
+126it [00:41,  3.01it/s]
+train_loss: 0.4015
+08/17 04:51:46 PM | Epoch: 47/0.402---Train,0.460----Test,RMSE28.431,NRMSE0.0314,MAE24.144,R20.639,CSI0.647,POD0.769,FAR0.197
+
+INFO:gal:Epoch: 47/0.402---Train,0.460----Test,RMSE28.431,NRMSE0.0314,MAE24.144,R20.639,CSI0.647,POD0.769,FAR0.197
+
+rmse 28.431147
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/47/model.pth
+Train loss: 0.4015, Test loss: 0.4596, RMSE: 28.43,NRMSE: 0.0314, MAE: 24.14,R2: 0.6390, CSI: 0.6468, POD: 0.7691, FAR: 0.1973
+
+Train epoch 48:
+126it [00:40,  3.12it/s]
+train_loss: 0.4024
+08/17 04:52:40 PM | Epoch: 48/0.402---Train,0.455----Test,RMSE30.138,NRMSE0.0333,MAE26.033,R20.642,CSI0.638,POD0.852,FAR0.282
+
+INFO:gal:Epoch: 48/0.402---Train,0.455----Test,RMSE30.138,NRMSE0.0333,MAE26.033,R20.642,CSI0.638,POD0.852,FAR0.282
+
+rmse 30.138176
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/48/model.pth
+Train loss: 0.4024, Test loss: 0.4554, RMSE: 30.14,NRMSE: 0.0333, MAE: 26.03,R2: 0.6424, CSI: 0.6384, POD: 0.8524, FAR: 0.2823
+
+Train epoch 49:
+126it [00:39,  3.17it/s]
+train_loss: 0.4023
+08/17 04:53:34 PM | Epoch: 49/0.402---Train,0.435----Test,RMSE28.228,NRMSE0.0312,MAE24.237,R20.659,CSI0.660,POD0.849,FAR0.252
+
+INFO:gal:Epoch: 49/0.402---Train,0.435----Test,RMSE28.228,NRMSE0.0312,MAE24.237,R20.659,CSI0.660,POD0.849,FAR0.252
+
+rmse 28.2277
+Save model: /content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/00/49/model.pth
+Train loss: 0.4023, Test loss: 0.4348, RMSE: 28.23,NRMSE: 0.0312, MAE: 24.24,R2: 0.6585, CSI: 0.6602, POD: 0.8487, FAR: 0.2517
+
+No. 0 experiment results:
+Train loss: 0.4023, Test loss: 0.4348, RMSE: 28.23, NRMSE:0.03 ,MAE: 24.24, R2: 0.66, CSI: 0.6602, POD: 0.8487, FAR: 0.2517
+=========================
+
+---------------------------------------
+train_loss | mean: 0.4023 std: 0.0000
+test_loss  | mean: 0.4348 std: 0.0000
+RMSE       | mean: 28.2277 std: 0.0000
+MAE        | mean: 24.2371 std: 0.0000
+CSI        | mean: 0.6602 std: 0.0000
+POD        | mean: 0.8487 std: 0.0000
+FAR        | mean: 0.2517 std: 0.0000
+R2         | mean: 0.6585 std: 0.0000
+learningRate... 0.0015weight_decay 0.0001
+GC_LSTM(
+  (conv): ChebConv(11, 2, K=2, normalization=sym)
+  (lstm_cell): LSTMCell(
+    (x2h): Linear(in_features=13, out_features=128, bias=True)
+    (h2h): Linear(in_features=32, out_features=128, bias=True)
+  )
+  (fc_out): Linear(in_features=32, out_features=1, bias=True)
+)
+/content/drive/MyDrive/BTP-03/PM25-GNN/Results/24_8/PM2.5-GNN/20230817160818/metric.txt
