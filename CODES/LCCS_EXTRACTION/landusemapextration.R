@@ -1,0 +1,30 @@
+library(ncdf4)
+setwd("D:\\AllGroun")
+setwd("D:\\january\\pm2.5data\\honours")
+library("openxlsx")
+library("readxl")
+library(raster) # package for raster manipulation
+library(rgdal)
+library(stringr)
+r_brick <- brick("C3S-LC-L4-LCCS-Map-300m-P1Y-2019-v2.1.1.nc",varname = "lccs_class")
+lat_data <- read_excel("state-latitude_longitudes.xlsx")
+
+x<-c()
+k<-c()
+for(i in 1:length(lat_data$latitude)){
+  toolik_lat<-as.numeric(str_extract(lat_data$latitude[i],"\\d+.\\d+"))
+  toolik_lon<-as.numeric(str_extract(lat_data$longitude[i],"\\d+.\\d+"))
+  toolik_series <- extract(r_brick, SpatialPoints(cbind(toolik_lon,toolik_lat)), method='simple')
+  x<-cbind(x,as.numeric(toolik_series))
+  print(x)
+  k<-cbind(k,lat_data$station_name[i])
+}
+library(fields)
+library(purrr)
+
+image.plot(lon, lat,variable)
+z <- rbind(k,as.numeric(x))
+p <- c()
+p<-cbind(p,as.numeric(z[,2]))
+p<-cbind(k,p)
+write.xlsx(lat_data,"D:\\AllGroun\\latitude.xlsx")
