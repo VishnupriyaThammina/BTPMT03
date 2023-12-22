@@ -1,4 +1,4 @@
-#PM2.5 Forecasting Using Graph Neural Network Approach All Over India
+## PM2.5 Forecasting Using Graph Neural Network Approach All Over India
 This is a project on prediction of a pollutant called pm2.5 using metreological feature [temperature, wind , k index etc]
 Manually collected data for 266 groud monitoring from CPCB site all over india
 this is a gigantic dataset 
